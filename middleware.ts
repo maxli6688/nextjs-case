@@ -3,8 +3,6 @@ import { NextMiddleware, NextResponse, userAgent } from 'next/server'
 import { IS_DEV, CUR_LANGUAGE_LIST, IS_TEST } from './modules/constants/constants'
 import UrlPattern from 'url-pattern'
 // login assets
-// const authUrlList = ['/wallet', '/transfer', '/send', '/setting', '/restore-wallet']
-// const PAGES = ['api', 'assets', 'login', 'send', 'setting', 'test', 'transfer', 'wallet']
 
 const APP_UA = /iPhone/i
 const isRemoveAuth = IS_DEV || IS_TEST // 去除APP_UA限制
