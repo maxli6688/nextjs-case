@@ -35,6 +35,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# Sentry
+.sentryclirc
+
 docs
 tmp
 temp
