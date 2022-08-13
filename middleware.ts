@@ -61,8 +61,8 @@ export const middleware: NextMiddleware = (request, event) => {
     response.cookies.set('os', ua?.os.name || '')
     return response
   } else {
-    if (!request.nextUrl.pathname.startsWith('/401')) {
-      const redirectUrl = new URL('/401', request.url)
+    if (!request.nextUrl.pathname.startsWith('/404')) {
+      const redirectUrl = new URL('/404', request.url)
       // redirectUrl.searchParams.set('from', request.nextUrl.pathname)
       return NextResponse.redirect(redirectUrl)
     }
